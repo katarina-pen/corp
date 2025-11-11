@@ -45,13 +45,13 @@ Ditt projekt skall dokumenteras (varje vecka efter/under lektion) och lämnas in
 						  
 **Tidsplanering**
 
-| 43 | Presentation av uppgiften / Om dokumentering / Start planering/ skissa |
+| 46 | Presentation av uppgiften / Om dokumentering / Start planering/ skissa |
 | :---: | :---- |
-| 45 | Fortsatt arbete. Skräddarsy Bootstrap med Scss |
-| 46 | Fortsatt arbete |
-| 47 |  |
-| 48 |  |
-| 49 | Inlämning |
+| 47 | Fortsatt arbete. Skräddarsy Bootstrap med Scss |
+| 48 | Fortsatt arbete |
+| 49 |  |
+| 50 |  |
+| 51 | Inlämning |
 
 **Bedömningsmatris**
 
@@ -59,7 +59,7 @@ Ditt projekt skall dokumenteras (varje vecka efter/under lektion) och lämnas in
 | ----- | ----- | ----- |
 | **Eleven gör en genomarbetad projektplan för en tänkt produkt, vid behov reviderar eleven planen.** | **Eleven gör en genomarbetad projektplan för en tänkt produkt.** *Handgjord skiss om grovt visar layout  på tänkt produkt. Även mobil layout visas.* | **Eleven gör en enkel projektplan för en tänkt produkt.** *enkel skiss* |
 | **Utifrån projektplanen utvecklar eleven efter samråd med handledare produkten där logiker som styr innehåll, design och beteende i omfattande utsträckning är åtskilda.** | **Utifrån projektplanen utvecklar eleven efter samråd med handledare produkten där logiker som styr innehåll, design och beteende är åtskilda.** *efter samråd* | **Utifrån projektplanen utvecklar eleven i samråd med handledare produkten där logiker som styr innehåll, design och beteende i begränsad utsträckning är åtskilda.** *i samråd* |
-| **I arbetet utvecklar eleven kod som med gott resultat följer standarder och som omfattar flera tekniker för märkspråk och stilmallar där eleven i omfattande utsträckning använder tekniker för att generera stilmallskod.** | **I arbetet utvecklar eleven kod som med tillfredsställande resultat följer standarder och som omfattar några tekniker för märkspråk och stilmallar där eleven använder tekniker för att generera stilmallskod.** *SCSS (skräddarsy bootstrap)* | **I arbetet utvecklar eleven kod som med tillfredsställande resultat följer standarder och som omfattar någon teknik för märkspråk och stilmallar där eleven i begränsad utsträckning använder tekniker för att generera stilmallskod.** *css-variabler* |
+| **I arbetet utvecklar eleven kod som med gott resultat följer standarder och som omfattar flera tekniker för märkspråk och stilmallar där eleven i omfattande utsträckning använder tekniker för att generera stilmallskod.** | **I arbetet utvecklar eleven kod som med tillfredsställande resultat följer standarder och som omfattar några tekniker för märkspråk och stilmallar där eleven använder tekniker för att generera stilmallskod.** *css-variabler* | **I arbetet utvecklar eleven kod som med tillfredsställande resultat följer standarder och som omfattar någon teknik för märkspråk och stilmallar där eleven i begränsad utsträckning använder tekniker för att generera stilmallskod.** *Bootstrap* |
 | **I arbetet bearbetar eleven med gott resultat och via flera moment text, bild och eventuell annan media så att de blir anpassade för att fungera i produkten.** | **I arbetet bearbetar eleven med tillfredsställande resultat och via flera moment text, bild och eventuell annan media så att de blir anpassade för att fungera i produkten.** *Animerad svg logga  Välarbetade bilder/text som passar ihop i produkten*  | **I arbetet bearbetar eleven med tillfredsställande resultat text, bild och eventuell annan media så att de blir anpassade för att fungera i produkten.**  *Svg logga Genomarbetat textsemantik (h1,h2,p…)* |
 | **Eleven utvecklar med gott resultat funktionalitet inom något eller några av områdena domskript, interaktiv 2D-grafik, 3D-grafik eller animationer.** *Canvas, Paint, JS eller Blackjack har modifierats mycket för att fungera till produkt* | **Eleven utvecklar med tillfredsställande resultat funktionalitet inom något eller några av områdena domskript, interaktiv 2D-grafik, 3D-grafik eller animationer.** *Animerad svg logga Canvas, Paint, JS eller Blackjack har modifierats för att fungera till produkt* | **Eleven utvecklar med tillfredsställande funktionalitet inom något eller några av områdena domskript, interaktiv 2D-grafik, 3D-grafik eller animationer.** *svg logga/bild, interaktiv Canvas (paint, canvas-spel, eller BlackJack)*  |
 | **I sitt arbete inkluderar eleven flera funktioner av komplex natur från ett klassbibliotek eller ramverk inom områdena design eller skript.** | **I sitt arbete inkluderar eleven några funktioner från ett klassbibliotek eller ramverk inom områdena design eller skript.** *Responsiv Bootstrap \+ modifierad canvas* | **I sitt arbete inkluderar eleven någon enkel funktion från ett klassbibliotek eller ramverk inom områdena design eller skript.** *Bootstrap \+ enklare canvas (från exempel)* |
