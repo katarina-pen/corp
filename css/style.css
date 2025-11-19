@@ -1,1 +1,7 @@
 /* Egen custom CSS här */
+
+.col {
+    background-color: blueviolet;
+    border: solid black;
+}
+
