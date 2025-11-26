@@ -1,7 +1,12 @@
 /* Egen custom CSS här */
+#canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
 
 .col {
     background-color: blueviolet;
     border: solid black;
 }
-

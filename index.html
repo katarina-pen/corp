@@ -19,36 +19,54 @@
   <!-- Övre container där alla ritfunktioner ligger -->
   <div class="menuContainer"> 
     <div class="row align-items-start">
-      
+            <!-- Färger -->
         <div class="col py-4">
           <!-- Row 1 (övre) -->
           <div class="row mb-2"> 
-              <div class="col-2 border">A1</div>
-              <div class="col-2 border">A2</div>
-              <div class="col-2 border">A3</div>
-              <div class="col-2 border">A4</div>
-              <div class="col-2 border">A5</div>
-              <div class="col-2 border">A6</div>
+              <div class="col-2 border"><button id="hotpinkBtn">HotPink</button></div>
+              <div class="col-2 border"><button id="blackBtn">Black</button></div>
+              <div class="col-2 border"><button id="whiteBtn">White</button></div>
+              <div class="col-2 border"><button id="redBtn">Red</button></div>
+              <div class="col-2 border"><button id="yellowBtn">Yellow</button></div>
+              <div class="col-2 border"><button id="greenBtn">Green</button></div>
           </div>
 
             <!-- Row 2 (nedre) -->
           <div class="row">
-            <div class="col-2 border">B1</div>
-            <div class="col-2 border">B2</div>
-            <div class="col-2 border">B3</div>
-            <div class="col-2 border">B4</div>
-            <div class="col-2 border">B5</div>
-            <div class="col-2 border">B6</div>
+            <div class="col-2 border"><button id="orangeBtn">Orange</button></div>
+            <div class="col-2 border"><button id="greyBtn">Grey</button></div>
+            <div class="col-2 border"><button id="purpleBtn">Purple</button></div>
+            <div class="col-2 border"><button id="brownBtn">Brown</button></div>
+            <div class="col-2 border"><button id="beigeBtn">Beige</button></div>
+            <div class="col-2 border"><button id="mysteryBtn">Mystery</button></div>
           </div>
 
         </div>
-      
-      <div class="col py-4">
-        2
-      </div>
-      <div class="col py-4">
-        3
-      </div>
+        <!-- Ritfunktioner -->
+        <div class="col py-4">
+          <!-- Row 1 (övre) -->
+          <div class="row mb-2">
+            <div class="col-2 border">C1</div>
+            <div class="col-2 border">C2</div>
+            <div class="col-2 border">C3</div>
+            <div class="col-2 border">C4</div>
+            <div class="col-2 border">C5</div>
+            <div class="col-2 border">C6</div>
+          </div>
+          <!-- Row 2 (nedre) -->
+          <div class="row">
+            <div class="col-2 border">D1</div>
+            <div class="col-2 border">D2</div>
+            <div class="col-2 border">D3</div>
+            <div class="col-2 border">D4</div>
+            <div class="col-2 border">D5</div>
+            <div class="col-2 border">D6</div>
+          </div>
+        </div>
+        <div class="col py-4">
+          <label for="brushRange" class="form-label">Brush size:<span id="brushOutput"></span></label>
+          <input type="range" class="form-range" min="5" max="20" step="0.5" id="brushRange">
+        </div> 
 
     </div>
   </div>
@@ -57,7 +75,9 @@
   <div class="paintingContainer">
 
   </div>
-
+  <!-- Länkar till canvas -->
+  <canvas id="canvas"></canvas>
+  <script src="paint.js"></script>
 
 </body>
 
