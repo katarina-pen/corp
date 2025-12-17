@@ -11,62 +11,66 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <title>Corp</title>
+  <title>Paint</title>
 </head>
 
 <body>
 
   <!-- Övre container där alla ritfunktioner ligger -->
-  <div class="menuContainer"> 
+  <div class="menuContainer">
     <div class="row align-items-start">
-            <!-- Färger -->
-        <div class="col py-4">
-          <!-- Row 1 (övre) -->
-          <div class="row mb-2"> 
-              <div class="col-2 border"><button id="hotpinkBtn">HotPink</button></div>
-              <div class="col-2 border"><button id="blackBtn">Black</button></div>
-              <div class="col-2 border"><button id="whiteBtn">White</button></div>
-              <div class="col-2 border"><button id="redBtn">Red</button></div>
-              <div class="col-2 border"><button id="yellowBtn">Yellow</button></div>
-              <div class="col-2 border"><button id="greenBtn">Green</button></div>
-          </div>
-
-            <!-- Row 2 (nedre) -->
-          <div class="row">
-            <div class="col-2 border"><button id="orangeBtn">Orange</button></div>
-            <div class="col-2 border"><button id="greyBtn">Grey</button></div>
-            <div class="col-2 border"><button id="purpleBtn">Purple</button></div>
-            <div class="col-2 border"><button id="brownBtn">Brown</button></div>
-            <div class="col-2 border"><button id="beigeBtn">Beige</button></div>
-            <div class="col-2 border"><button id="mysteryBtn">Mystery</button></div>
-          </div>
-
+      <!-- Färger -->
+      <div class="col py-4">
+        <!-- Row 1 (övre) -->
+        <div class="row mb-2">
+          <div class="col-2 border"><button id="hotpinkBtn" title="HotPink">HotPink</button></div>
+          <div class="col-2 border"><button id="blackBtn" title="Black">Black</button></div>
+          <div class="col-2 border"><button id="whiteBtn" title="White">White</button></div>
+          <div class="col-2 border"><button id="redBtn" title="Red">Red</button></div>
+          <div class="col-2 border"><button id="yellowBtn" title="Yellow">Yellow</button></div>
+          <div class="col-2 border"><button id="greenBtn" title="Green">Green</button></div>
         </div>
-        <!-- Ritfunktioner -->
-        <div class="col py-4">
-          <!-- Row 1 (övre) -->
-          <div class="row mb-2">
-            <div class="col-2 border"><button id="eraseBtn">Erase</button></div>
-            <div class="col-2 border"><button id="squareBtn">Square</button></div>
-            <div class="col-2 border">C3</div>
-            <div class="col-2 border">C4</div>
-            <div class="col-2 border">C5</div>
-            <div class="col-2 border">C6</div>
-          </div>
-          <!-- Row 2 (nedre) -->
-          <div class="row">
-            <div class="col-2 border">D1</div>
-            <div class="col-2 border">D2</div>
-            <div class="col-2 border">D3</div>
-            <div class="col-2 border">D4</div>
-            <div class="col-2 border">D5</div>
-            <div class="col-2 border">D6</div>
-          </div>
+
+        <!-- Row 2 (nedre) -->
+        <div class="row">
+          <div class="col-2 border"><button id="orangeBtn" title="Orange">Orange</button></div>
+          <div class="col-2 border"><button id="greyBtn" title="Grey">Grey</button></div>
+          <div class="col-2 border"><button id="purpleBtn" title="Purple">Purple</button></div>
+          <div class="col-2 border"><button id="brownBtn" title="Brown">Brown</button></div>
+          <div class="col-2 border"><button id="beigeBtn" title="Beige">Beige</button></div>
+          <div class="col-2 border"><button id="bratBtn" title="Brat">brat</button></div>
         </div>
-        <div class="col py-4">
-          <label for="brushRange" class="form-label">Brush size:<span id="brushOutput"></span></label>
-          <input type="range" class="form-range" min="5" max="20" step="0.5" id="brushRange">
-        </div> 
+
+      </div>
+      <!-- Ritfunktioner -->
+      <div class="col py-4">
+        <!-- Row 1 (övre) -->
+        <div class="row mb-2">
+          <div class="col-2 border"><button id="eraseBtn" title="Eraser"><img
+                src="/media/icons/erase icon/erase icon.svg" alt="Erase Button"
+                style="width: auto; height: 50px;"></button></div>
+          <div class="col-2 border"><button id="squareBtn" title="Square"><img src="/media/icons/square.svg"
+                alt="Square Button" style="width: auto; height: 50px;"></button></div>
+          <div class="col-2 border"><button id="pencilBtn" title="Pencil"><img src="/media/icons/pencil icon.svg"
+                alt="Pencil Button" style="width: auto; height: 50px;"></button></div>
+          <div class="col-2 border">C4</div>
+          <div class="col-2 border">C5</div>
+          <div class="col-2 border">C6</div>
+        </div>
+        <!-- Row 2 (nedre) -->
+        <div class="row">
+          <div class="col-2 border">D1</div>
+          <div class="col-2 border">D2</div>
+          <div class="col-2 border">D3</div>
+          <div class="col-2 border">D4</div>
+          <div class="col-2 border">D5</div>
+          <div class="col-2 border">D6</div>
+        </div>
+      </div>
+      <div class="col py-4">
+        <label for="brushRange" class="form-label">Brush size:<span id="brushOutput"></span></label>
+        <input type="range" class="form-range" min="5" max="20" step="0.5" id="brushRange">
+      </div>
 
     </div>
   </div>

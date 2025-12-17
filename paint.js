@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
     let color = "black"
     ctx.strokeStyle = color;
     // ctx.strokeRect(50, 50, 200, 200);
-    
+
 
     //Variables
     let painting = false;
@@ -37,7 +37,7 @@ window.addEventListener('load', () => {
         ctx.strokeStyle = color;
         ctx.lineWidth = brushSize;
         ctx.lineCap = "round";
-        
+
         // console.log("målar")
         // ctx.lineTo(e.clientX, e.clientY); //musens position
         // ctx.stroke();
@@ -50,18 +50,22 @@ window.addEventListener('load', () => {
         ctx.stroke();
         ctx.beginPath();
         ctx.moveTo(x, y);
+        //Skapar rektangel
         function createSquare() {
-            ctx.fillRect(x, y, 50, 50)
+            // ctx.fillRect(x, y, 50, 50)
+            ctx.lineCap = "square";
         }
 
-        // squareBtn.addEventListener("click", createSquare);
-        // canvas.addEventListener("click", createSquare)
-       document.getElementById('squareBtn').onclick = function() {
-           canvas.addEventListener("click", createSquare)
-       }
-   
-
         
+
+        document.getElementById('squareBtn').onclick = function () {
+            canvas.addEventListener("click", createSquare)
+        }
+
+
+
+
+
 
 
         //2. Måla :D
@@ -161,11 +165,11 @@ window.addEventListener('load', () => {
         color = "beige";
     });
 
-    //MYSTERY 
-    myseryBtn = document.querySelector("#myseryBtn");
-    myseryBtn.addEventListener("click", () => {
-        //SKA VARA SLUMPMÄSSIGT
-    
+    //brat 
+    bratBtn = document.querySelector("#bratBtn");
+    bratBtn.addEventListener("click", () => {
+        color = "#8ACE00";
+
     });
 
     //Buttons and drawing functions
@@ -177,6 +181,6 @@ window.addEventListener('load', () => {
     //     // ctx.fillRect(x,y,200,200);
     //     console.log("square pressed");
     // });
-    
+
 
 });
