@@ -5,71 +5,96 @@
     display: block;
 }
 
-
-.col {
-    background-color: blueviolet;
-    border: solid black;
+table, th, td {
+    border: none !important;
 }
 
+.col {
+    background-color: silver;
+    border: solid black;
+    height: 150px;
+    
+}
+
+
+#brushOutput {
+    color: steelblue;
+}
 
 /* buttons! */
 #hotpinkBtn {
     background-color: hotpink;
     color: black;
+    text-shadow: 2px 2px deeppink;
+    
 }
 
 #blackBtn {
     background-color: black;
     color: white;
+    text-shadow: 2px 2px darkgrey;
 }
 
 #whiteBtn {
     background-color: white;
     color: black;
+    text-shadow: 2px 2px grey;
 }
 
 #redBtn {
     background-color: red;
     color: black;
+    text-shadow: 2px 2px firebrick;
 }
 
 #yellowBtn {
     background-color: yellow;
     color: black;
+    font-size: 13px;
+    text-shadow: 2px 2px goldenrod;
+   
 }
 
 #greenBtn {
     background-color: green;
     color: black;
+    text-shadow: 2px 2px darkseagreen;
 }
 
 #orangeBtn {
     background-color: orange;
     color: black;
+    font-size: 13px;
+    text-shadow: 2px 2px darkorange;
 }
 
 #greyBtn {
     background-color: grey;
     color: black;
+    text-shadow: 2px 2px darkgray;
 }
 
 #purpleBtn {
     background-color: purple;
     color: black;
+    font-size: 13px;
+    text-shadow: 2px 2px rebeccapurple;
 }
 
 #brownBtn {
     background-color: brown;
     color: black;
+    text-shadow: 2px 2px sandybrown;
 }
 
 #beigeBtn {
     background-color: beige;
     color: black;
+    text-shadow: 2px 2px peachpuff;
 }
 
 #bratBtn {
     background-color: #8ACE00;
     color: black;
+    font-family: "Arial";
 }
-

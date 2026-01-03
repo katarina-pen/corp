@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
     canvas.width = canvas.offsetWidth;
     let color = "black"
     ctx.strokeStyle = color;
+    let lineShape = "round"
     // ctx.strokeRect(50, 50, 200, 200);
 
 
@@ -36,7 +37,7 @@ window.addEventListener('load', () => {
         if (!painting) return;
         ctx.strokeStyle = color;
         ctx.lineWidth = brushSize;
-        ctx.lineCap = "round";
+        ctx.lineCap = lineShape;
 
         // console.log("målar")
         // ctx.lineTo(e.clientX, e.clientY); //musens position
@@ -51,16 +52,17 @@ window.addEventListener('load', () => {
         ctx.beginPath();
         ctx.moveTo(x, y);
         //Skapar rektangel
-        function createSquare() {
-            // ctx.fillRect(x, y, 50, 50)
-            ctx.lineCap = "square";
-        }
+        // function fillSquare() {
+        //     // ctx.fillRect(x, y, 50, 50)
+        //     ctx.fillStyle = color;
+        //     ctx.fillRect(0, 0, canvas.width, canvas.height);
+        // }
 
-        
 
-        document.getElementById('squareBtn').onclick = function () {
-            canvas.addEventListener("click", createSquare)
-        }
+
+        // document.getElementById('fillBtn').onclick = function () {
+        //     canvas.addEventListener("click", fillSquare)
+        // }
 
 
 
@@ -82,6 +84,7 @@ window.addEventListener('load', () => {
 
     // brush slider
     const brushRange = document.querySelector("#brushRange");
+    const quantity = document.querySelector("#quantity");
     let brushSize = parseInt(brushRange.value);
     //texten där värdet på brush size står
     const brushOutput = document.querySelector("#brushOutput");
@@ -90,6 +93,7 @@ window.addEventListener('load', () => {
     brushRange.addEventListener("input", () => {
         brushSize = parseInt(brushRange.value);
         brushOutput.textContent = brushSize;
+
     })
 
     //Color change
@@ -112,6 +116,7 @@ window.addEventListener('load', () => {
 
     function whiteColor() {
         color = "white";
+        lineShape = "round"
     }
     eraseBtn.addEventListener("click", whiteColor);
     whiteBtn.addEventListener("click", whiteColor);
@@ -175,12 +180,30 @@ window.addEventListener('load', () => {
     //Buttons and drawing functions
     //ERASE finns längre upp med whiteBtn
 
-    //SHAPES
-    // squareBtn = document.querySelector("squareBtn");
-    // squareBtn.addEventListener("click",() => {
-    //     // ctx.fillRect(x,y,200,200);
-    //     console.log("square pressed");
-    // });
+    //Square tool
+    squareBtn = document.querySelector("#squareBtn");
+    squareBtn.addEventListener("click", () => {
+        // ctx.fillRect(x,y,200,200);
+        lineShape = "square";
+        console.log("square pressed");
+    });
+
+    //Pencil tool
+    const pencilBtn = document.querySelector("#pencilBtn");
+    pencilBtn.addEventListener("click", () => {
+        // ctx.fillRect(x,y,200,200);
+        lineShape = "round";
+        console.log("pencil pressed");
+    });
+
+    //Fill tool
+    fillBtn = document.querySelector("#fillBtn");
+    fillBtn.addEventListener("click", () => {
+        ctx.fillStyle = color;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    });
+
+    
 
 
 });

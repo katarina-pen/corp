@@ -1,5 +1,9 @@
 body {
   /* margin-top: 40px; This margin just makes the text easier to read. You can remove it if you want since it can mess with your other styles. */
+      font-family: "Permanent Marker", cursive;
+      font-weight: 400;
+      font-style: normal;
+    
 }
 
 body::before {

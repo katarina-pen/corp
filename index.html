@@ -12,33 +12,37 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <title>Paint</title>
+  <!-- FONTS -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  </style>
 </head>
 
 <body>
 
   <!-- Övre container där alla ritfunktioner ligger -->
   <div class="menuContainer">
-    <div class="row align-items-start">
+    <div class="row align-items-stretch">
       <!-- Färger -->
       <div class="col py-4">
         <!-- Row 1 (övre) -->
         <div class="row mb-2">
-          <div class="col-2 border"><button id="hotpinkBtn" title="HotPink">HotPink</button></div>
-          <div class="col-2 border"><button id="blackBtn" title="Black">Black</button></div>
-          <div class="col-2 border"><button id="whiteBtn" title="White">White</button></div>
-          <div class="col-2 border"><button id="redBtn" title="Red">Red</button></div>
-          <div class="col-2 border"><button id="yellowBtn" title="Yellow">Yellow</button></div>
-          <div class="col-2 border"><button id="greenBtn" title="Green">Green</button></div>
+          <div class="col-2"><button id="hotpinkBtn" title="HotPink" style="width: 60px; height: 50px;">Hot Pink</button></div>
+          <div class="col-2"><button id="blackBtn" title="Black" style="width: 60px; height: 50px;">Black</button></div>
+          <div class="col-2"><button id="whiteBtn" title="White" style="width: 60px; height: 50px;">White</button></div>
+          <div class="col-2"><button id="redBtn" title="Red"style="width: 60px; height: 50px;">Red</button></div>
+          <div class="col-2"><button id="yellowBtn" title="Yellow" style="width: 60px; height: 50px;">Yellow</button></div>
+          <div class="col-2"><button id="greenBtn" title="Green" style="width: 60px; height: 50px;">Green</button></div>
         </div>
 
         <!-- Row 2 (nedre) -->
         <div class="row">
-          <div class="col-2 border"><button id="orangeBtn" title="Orange">Orange</button></div>
-          <div class="col-2 border"><button id="greyBtn" title="Grey">Grey</button></div>
-          <div class="col-2 border"><button id="purpleBtn" title="Purple">Purple</button></div>
-          <div class="col-2 border"><button id="brownBtn" title="Brown">Brown</button></div>
-          <div class="col-2 border"><button id="beigeBtn" title="Beige">Beige</button></div>
-          <div class="col-2 border"><button id="bratBtn" title="Brat">brat</button></div>
+          <div class="col-2"><button id="orangeBtn" title="Orange" style="width: 60px; height: 50px;">Orange</button></div>
+          <div class="col-2"><button id="greyBtn" title="Grey" style="width: 60px; height: 50px;">Grey</button></div>
+          <div class="col-2"><button id="purpleBtn" title="Purple" style="width: 60px; height: 50px;">Purple</button></div>
+          <div class="col-2"><button id="brownBtn" title="Brown" style="width: 60px; height: 50px;">Brown</button></div>
+          <div class="col-2"><button id="beigeBtn" title="Beige" style="width: 60px; height: 50px;">Beige</button></div>
+          <div class="col-2"><button id="bratBtn" title="Brat" style="width: 60px; height: 50px;">brat</button></div>
         </div>
 
       </div>
@@ -46,20 +50,21 @@
       <div class="col py-4">
         <!-- Row 1 (övre) -->
         <div class="row mb-2">
-          <div class="col-2 border"><button id="eraseBtn" title="Eraser"><img
+          <div class="col-2"><button id="eraseBtn" title="Eraser"><img
                 src="/media/icons/erase icon/erase icon.svg" alt="Erase Button"
-                style="width: auto; height: 50px;"></button></div>
-          <div class="col-2 border"><button id="squareBtn" title="Square"><img src="/media/icons/square.svg"
-                alt="Square Button" style="width: auto; height: 50px;"></button></div>
-          <div class="col-2 border"><button id="pencilBtn" title="Pencil"><img src="/media/icons/pencil icon.svg"
-                alt="Pencil Button" style="width: auto; height: 50px;"></button></div>
-          <div class="col-2 border">C4</div>
+                style="width: 60px; height: 50px;"></button></div>
+          <div class="col-2"><button id="squareBtn" title="Square"><img src="/media/icons/square.svg"
+                alt="Square Button" style="width: 60px; height: 50px;"></button></div>
+          <div class="col-2"><button id="pencilBtn" title="Pencil"><img src="/media/icons/pencil icon.svg"
+                alt="Pencil Button" style="width: 60px; height: 50px;"></button></div>
+          <div class="col-2"><button onClick="window.location.reload();"><img src="/media/icons/refresh arrow icon.svg" alt="Refresh Button" style="width: auto; height: 50px;"></button></div>
           <div class="col-2 border">C5</div>
           <div class="col-2 border">C6</div>
         </div>
         <!-- Row 2 (nedre) -->
         <div class="row">
-          <div class="col-2 border">D1</div>
+          <div class="col-2 border"><button id="fillBtn" title="fill"><img src="/media/icons/noBG.png" alt="Fill Button"
+              style="width: 60px; height: 50px;"></button></div>
           <div class="col-2 border">D2</div>
           <div class="col-2 border">D3</div>
           <div class="col-2 border">D4</div>
@@ -68,8 +73,10 @@
         </div>
       </div>
       <div class="col py-4">
-        <label for="brushRange" class="form-label">Brush size:<span id="brushOutput"></span></label>
-        <input type="range" class="form-range" min="5" max="20" step="0.5" id="brushRange">
+        <label for="brushRange" class="form-label">Brush size: <span id="brushOutput"></span></label>
+        <input type="range" class="form-range" min="1" max="100" step="0.5" id="brushRange">
+        <input type="number" id="quantity" name="quantity" min="1" max="100">
+        <input type="submit">
       </div>
 
     </div>
