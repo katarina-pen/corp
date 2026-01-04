@@ -16,6 +16,15 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
   </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap');
+  </style>
 </head>
 
 <body>
@@ -51,36 +60,42 @@
         <!-- Row 1 (övre) -->
         <div class="row mb-2">
           <div class="col-2"><button id="eraseBtn" title="Eraser"><img
-                src="/media/icons/erase icon/erase icon.svg" alt="Erase Button"
+                src="/media/icons/erase icon.svg" alt="Erase Button"
                 style="width: 60px; height: 50px;"></button></div>
           <div class="col-2"><button id="squareBtn" title="Square"><img src="/media/icons/square.svg"
                 alt="Square Button" style="width: 60px; height: 50px;"></button></div>
           <div class="col-2"><button id="pencilBtn" title="Pencil"><img src="/media/icons/pencil icon.svg"
                 alt="Pencil Button" style="width: 60px; height: 50px;"></button></div>
-          <div class="col-2"><button onClick="window.location.reload();"><img src="/media/icons/refresh arrow icon.svg" alt="Refresh Button" style="width: auto; height: 50px;"></button></div>
-          <div class="col-2 border">C5</div>
-          <div class="col-2 border">C6</div>
+          <div class="col-2"></div>
+          <div class="col-2"></div>
+          <div class="col-2"></div>
         </div>
         <!-- Row 2 (nedre) -->
         <div class="row">
-          <div class="col-2 border"><button id="fillBtn" title="fill"><img src="/media/icons/noBG.png" alt="Fill Button"
+          <div class="col-2"><button id="fillBtn" title="Fill"><img src="/media/icons/fill bucket icon.svg" alt="Fill Button"
               style="width: 60px; height: 50px;"></button></div>
-          <div class="col-2 border">D2</div>
-          <div class="col-2 border">D3</div>
-          <div class="col-2 border">D4</div>
-          <div class="col-2 border">D5</div>
-          <div class="col-2 border">D6</div>
+          <div class="col-2"><button id="textBtn" title="Text"><img src="/media/icons/text tool icon.svg" alt="Text Button" style="width: 60px; height: 50px;"></div>
+          <div class="col-2"><button button id="refreshBtn" title="Refresh" onClick="window.location.reload();"><img src="/media/icons/refresh arrow icon.svg" alt="Refresh Button"
+              style="width: 60px; height: 50px;"></button></div>
+          <div class="col-2"></div>
+          <div class="col-2"></div>
+          <div class="col-2"></div>
         </div>
       </div>
       <div class="col py-4">
         <label for="brushRange" class="form-label">Brush size: <span id="brushOutput"></span></label>
         <input type="range" class="form-range" min="1" max="100" step="0.5" id="brushRange">
         <input type="number" id="quantity" name="quantity" min="1" max="100">
-        <input type="submit">
+        <p id="notFittingNumber">Please choose a number between 1-100</p>
+        <!-- <input type="submit"> -->
       </div>
 
     </div>
   </div>
+
+
+  <!-- CURSOR TEST -->
+   <!-- <img class="cursor" src="/media/icons/pencil icon.svg"/> -->
 
   <!-- Container för rityta -->
   <div class="paintingContainer">
@@ -89,6 +104,7 @@
   <!-- Länkar till canvas -->
   <canvas id="canvas"></canvas>
   <script src="paint.js"></script>
+  
 
 </body>
 

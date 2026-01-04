@@ -11,15 +11,70 @@ table, th, td {
 
 .col {
     background-color: silver;
-    border: solid black;
+    border: solid darkgrey;
+    border-width: 2px;
     height: 150px;
     
 }
 
 
+/* CURSOR TEST */
+/* .cursor {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+} */
+
+
+/* Third container:brush settings */
+#notFittingNumber {
+    display: none;
+}
+
 #brushOutput {
     color: steelblue;
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+        
 }
+
+#quantity {
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+        
+}
+
+.form-label {
+    font-family: "Rubik Iso", system-ui;
+    font-weight: 400;
+    font-style: normal;
+        
+}
+
+#notFittingNumber {
+    color: darkred;
+    font-family: "Coral Pixels", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+/* Animation */
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+
+
 
 /* buttons! */
 #hotpinkBtn {
@@ -28,6 +83,10 @@ table, th, td {
     text-shadow: 2px 2px deeppink;
     
 }
+
+/* .active {
+    background: #32bacf;
+} */
 
 #blackBtn {
     background-color: black;
