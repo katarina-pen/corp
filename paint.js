@@ -127,7 +127,6 @@ window.addEventListener('load', () => {
     yellowBtn = document.querySelector("#yellowBtn");
     yellowBtn.addEventListener("click", () => {
         color = "yellow";
-        document.getElementById("yellowBtn").style.border = "thick solid #0000FF";
 
     });
 
