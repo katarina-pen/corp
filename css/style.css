@@ -5,7 +5,9 @@
     display: block;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: none !important;
 }
 
@@ -14,7 +16,7 @@ table, th, td {
     border: solid darkgrey;
     border-width: 2px;
     height: 150px;
-    
+
 }
 
 
@@ -36,21 +38,21 @@ table, th, td {
     font-family: "Coral Pixels", serif;
     font-weight: 400;
     font-style: normal;
-        
+
 }
 
 #quantity {
     font-family: "Coral Pixels", serif;
     font-weight: 400;
     font-style: normal;
-        
+
 }
 
 .form-label {
     font-family: "Rubik Iso", system-ui;
     font-weight: 400;
     font-style: normal;
-        
+
 }
 
 #notFittingNumber {
@@ -81,7 +83,7 @@ table, th, td {
     background-color: hotpink;
     color: black;
     text-shadow: 2px 2px deeppink;
-    
+
 }
 
 /* .active {
@@ -111,12 +113,12 @@ table, th, td {
     color: black;
     font-size: 13px;
     text-shadow: 2px 2px goldenrod;
-   
+
 }
 
 #greenBtn {
     background-color: green;
-    color: black;
+    color: beige;
     text-shadow: 2px 2px darkseagreen;
 }
 
@@ -135,14 +137,14 @@ table, th, td {
 
 #purpleBtn {
     background-color: purple;
-    color: black;
+    color: beige;
     font-size: 13px;
     text-shadow: 2px 2px rebeccapurple;
 }
 
 #brownBtn {
     background-color: brown;
-    color: black;
+    color: beige;
     text-shadow: 2px 2px sandybrown;
 }
 
